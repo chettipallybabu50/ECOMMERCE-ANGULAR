@@ -1,0 +1,31 @@
+  
+<nav class="navbar navbar-expand-md navbar-light " style="background-color: rgb(135, 206, 235);">
+    <a class="navbar-brand " href="#" style="margin-left: 158px;"><h2>StyleBazaar</h2></a>
+    <form class="d-flex w-50 ms-2">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [matAutocomplete]="auto"
+        [formControl]="changecategory">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option style="font-size: 14px;" *ngFor="let item of filteredcategories | async" [value]="item">
+          {{ item }}
+        </mat-option>
+      </mat-autocomplete>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+      
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  pe-5">
+        <li class="nav-item ms-3">
+            <a class="nav-link " href="#"><i class="fa fa-shopping-cart">
+              <span *ngIf="cartCount > 0" class="badge">{{ cartCount }}</span>
+            </i>Cart</a>
+          </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" routerLink = "/profile"> <i class="fas fa-user mx-1"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  

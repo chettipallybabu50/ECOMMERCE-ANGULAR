@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row justify-content-center" style="margin-top: 41px;">
+      <div class="col-md-3 category-card" *ngFor="let category of categories">
+        <div class="d-flex flex-column align-items-center">
+          <h6 (click)="categoryItem(category)">{{ category }}</h6>
+          <a (click)="categoryItem(category)">
+          <img [src]="placeholderImageUrl"  class="img-fluid" style="width: 250px; height: auto;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,15 @@
+.fixed-size-img{
+    .fixed-size-img {
+        width: 20%; /* Set your desired width */
+        height: 20%; /* Set your desired height */
+        object-fit: cover; /* Ensures the image covers the area */
+        margin-bottom: 10px;
+      }
+}
+.rating{
+    color: rgb(23, 131, 23);
+}
+.product-view-card{
+    cursor: pointer;
+}
+

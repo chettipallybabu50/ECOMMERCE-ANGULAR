@@ -1,0 +1,6 @@
+.category-card{
+    cursor: pointer;
+}
+.category-card h6:hover {
+    color: #007bff; /* Change color on hover */
+  }

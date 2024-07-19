@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-center" style="margin-top: 21px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">{{viewproduct.category}}</h2>
+        <div class="col-md-12" *ngIf="viewproduct" style="display: flex; align-items: center;">
+            <div class="col-md-6">
+                <img [src]="viewproduct.image" alt="{{ viewproduct.title }}" style="max-width: 80%; height: auto;">
+            </div>
+            <div class="col-md-6">
+                <p style="color: #007bff;">{{viewproduct.title}}</p>
+                <p><strong>Description:</strong> {{ viewproduct.description }}</p>
+                <p><strong>Price:</strong> ${{ viewproduct.price }}</p>
+                <p class="rating">{{ viewproduct.rating.rate }} <i class="fa fa-star" aria-hidden="true"></i> && {{
+                    viewproduct.rating.count }} Ratings</p>
+                <!-- <button>ADD TO CART</button> -->
+                <button type="button"  class="btn btn-primary" (click)="addToCart()">  
+                    <i class="fa fa-shopping-cart"></i><b> ADD TO CART </b> </button>
+            </div>
+        </div>
+    </div>
+</div>
+  
