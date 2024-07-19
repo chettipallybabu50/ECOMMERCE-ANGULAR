@@ -7,7 +7,7 @@ This project is a small e-commerce application built using the Angular framework
 - **Category Display:** The application displays different product categories such as Men, Women, Electronics, etc.
 - **Product Listing:** Products within each category are listed with relevant details.
 - **Search Functionality:** Users can search for products across all categories.
-- **Responsive Design:** The application is designed to be responsive and works well on both desktop and mobile devices.
+- **Responsive Design:** The application is designed to be responsive and works well on desktop 
 
 ## Technology Stack
 - **Frontend Framework:** Angular
